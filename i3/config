@@ -216,7 +216,7 @@ bindsym Print exec --no-startup-id lximage-qt --screenshot
 # exec --no-startup-id redshift -l 26.156638:-81.7206867 -t 5600:3400
 
 # Notifications
-dunst -conf .config/dunst/dunstrc 
+# dunst -conf .config/dunst/dunstrc 
 
 # JP keyboard toggle
 exec --no-startup-id setxkbmap -layout "us,jp" -option "grp:win_space_toggle"
