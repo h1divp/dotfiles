@@ -7,6 +7,6 @@
 <h2></h2><br>
 
 <div align="center">
-    <img src="dotfiles-img.jpg" alt="screenshot of dotfiles">
+    <img src=".github/dotfiles-img.jpg" alt="screenshot of dotfiles">
 </div>
 <hr>
