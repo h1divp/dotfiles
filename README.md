@@ -21,6 +21,7 @@ If you see something you like, feel free to use it in your own config.
 ### Vital programs
 * window manager: i3
 * bar: polybar
+* desktop manager: ly
 
 ### Some favorite apps
 * top program: [bpytop](https://github.com/aristocratos/bpytop)
@@ -31,3 +32,5 @@ If you see something you like, feel free to use it in your own config.
 * other utilities I couldn't live without
     * [Clonezilla](https://clonezilla.org/) (for backups, copying drives)
     * for system ressurection: [gparted live USB](https://gparted.org/liveusb.php), [arch live USB](https://archlinux.org/download/) (on flash drives)
+    * bash-autocomplete
+    * redshift
