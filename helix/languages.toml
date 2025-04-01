@@ -1,1 +1,8 @@
-
+[[language]]
+name = "tsx"
+auto-format = true
+block-comment-tokens = { start = "{/*", end = "*/}" }
+[[language]]
+name = "jsx"
+auto-format = true
+block-comment-tokens = { start = "{/*", end = "*/}" }

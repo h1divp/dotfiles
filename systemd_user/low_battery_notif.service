@@ -2,4 +2,4 @@
 Description=check-battery
 
 [Service]
-ExecStart=##absolute path here##/.scripts/low_battery_notif
+ExecStart=/home/phoenix/.scripts/low_battery_notif

@@ -1,0 +1,5 @@
+#!/bin/sh -e
+export WINEPREFIX=/home/phoenix/.pol_prefixes/ClipStudioPaint/
+# prime-run wine /home/phoenix/.pol_prefixes/ClipStudioPaint/drive_c/Program\ Files/CELSYS/CLIP\ STUDIO\ 1.5/CLIP\ STUDIO\ PAINT/CLIPStudioPaint.exe 
+wine /home/phoenix/.pol_prefixes/ClipStudioPaint/drive_c/Program\ Files/CELSYS/CLIP\ STUDIO\ 1.5/CLIP\ STUDIO\ PAINT/CLIPStudioPaint.exe 
+export WINEPREFIX=/home/phoenix/.wine

@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+xrandr --output DP1 --off
+feh --bg-fill ~/Media/Wallpapers/kogasa.png
+i3-msg "workspace 10, move workspace to output eDP1"
+

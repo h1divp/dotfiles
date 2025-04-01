@@ -1,0 +1,11 @@
+#!/bin/bash
+
+sleep 1
+
+for ((i=0; i<3000; i++)); do
+	xdotool key alt+q
+	sleep 0.4
+	xdotool key e
+	xdotool key Escape
+	xdotool key Down
+done

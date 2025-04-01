@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+xrandr --output eDP1 --mode 2560x1440
+feh --bg-fill ~/Media/Wallpapers/kogasa.png
