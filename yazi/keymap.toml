@@ -1,0 +1,80 @@
+[[manager.prepend_keymap]]
+on   = "!"
+run  = 'shell "$SHELL" --block --confirm'
+desc = "Open shell here"
+[[manager.prepend_keymap]]
+on   = "l"
+run  = "plugin smart-enter"
+desc = "Enter the child directory, or open the file"
+[[manager.prepend_keymap]]
+on   = "p"
+run  = "plugin smart-paste"
+desc = "Paste into the hovered directory or CWD"
+[[manager.prepend_keymap]]
+on  = "<C-n>"
+run = '''
+	shell 'dragon -x -i -T "$1"' --confirm
+'''
+[[manager.prepend_keymap]]
+on  = "y"
+run = [ '''
+	shell 'echo "$@" | xclip -i -selection clipboard -t text/uri-list' --confirm
+''', "yank" ]
+[[manager.prepend_keymap]]
+on = [ "g", "r" ]
+run = '''
+	shell 'ya pub dds-cd --str "$(git rev-parse --show-toplevel)"' --confirm
+'''
+desc = "Go to git root"
+[[manager.prepend_keymap]]
+on = [ "g", "s" ]
+run = '''
+	cd ~/School
+'''
+desc = "Go to School"
+[[manager.prepend_keymap]]
+on = [ "g", "m" ]
+run = '''
+	cd ~/Media
+'''
+desc = "Go to Media"
+[[manager.prepend_keymap]]
+on = [ "g", "M" ]
+run = '''
+	cd /mnt
+'''
+desc = "Go to /mnt"
+[[manager.prepend_keymap]]
+on = [ "g", "S" ]
+run = '''
+	cd ~/Media/Screenshots
+'''
+desc = "Go to Screenshots"
+[[manager.prepend_keymap]]
+on = [ "g", "p" ]
+run = '''
+	cd ~/Programming
+'''
+desc = "Go to Programming"
+[[manager.prepend_keymap]]
+on = [ "g", "P" ]
+run = '''
+	cd ~/Professional
+'''
+desc = "Go to Professional"
+[[manager.prepend_keymap]]
+on   = "T"
+run  = "plugin max-preview"
+desc = "Maximize or restore preview"
+[[manager.prepend_keymap]]
+on  = "k"
+run = "plugin arrow '-1'"
+
+[[manager.prepend_keymap]]
+on  = "j"
+run = "plugin arrow '1'"
+
+[[input.prepend_keymap]]
+on   = "<Esc>"
+run  = "close"
+desc = "Cancel input"

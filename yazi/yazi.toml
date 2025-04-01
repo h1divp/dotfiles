@@ -1,0 +1,32 @@
+[opener]
+edit = [
+	{ run = 'helix "$@"', block = true, for = "unix" },
+]
+mpv = [
+	{ run = 'mpv "$@"', orphan = false, for = "unix" },
+]
+vlc = [
+	{ run = 'vlc "$@"', orphan = false, for = "unix" },
+]
+img = [
+	{ run = 'nsxiv -a "$@" ./', orphan = false, for = "unix" },
+]
+gimp = [
+		{ run = 'gimp "$@"', orphan = false, for = "unix" },
+]
+
+
+[open]
+prepend_rules = [
+  { mime = "text/*", use = "edit"},
+	{ mime = "video/*", use = "mpv, vlc" },
+	{ mime = "image/TIFF", use = "gimp" },
+	{ mime = "image/*", use = "img" },
+]
+
+[plugin]
+prepend_previewers = [
+  { name = "*.md", run = "glow" },
+  { mime = "{image,audio,video}/*", run = "mediainfo"},
+  { mime = "application/subrip", run = "mediainfo"},
+]
