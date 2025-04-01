@@ -34,3 +34,4 @@ If you see something you like, feel free to use it in your own config.
     * for system ressurection: [gparted live USB](https://gparted.org/liveusb.php), [arch live USB](https://archlinux.org/download/) (on flash drives)
     * bash-autocomplete
     * redshift
+    * rclone
