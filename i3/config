@@ -28,7 +28,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Set multiple displays
 
 # exec --no-startup-id xrandr --output HDMI-1 --mode 1920x1080 --left-of eDP-1
-# exec --no-startup-id xrandr --output DP-1 --right-of eDP-1
+exec --no-startup-id xrandr --output eDP1 --mode 2560x1440
+exec --no-startup-id xrandr --output DP1 --right-of eDP1 --mode 1920x1080
 
 smart_gaps on
 smart_borders no_gaps
@@ -36,7 +37,7 @@ smart_borders no_gaps
 # Borders
 gaps inner 15
 gaps outer 10
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1
 
 client.focused #000000 #979eab #ffffff
 
@@ -48,11 +49,13 @@ bindsym $mod+backslash exec --no-startup-id i3lock -c 000000
 bindsym $mod+Escape exec --no-startup-id i3lock -c 000000
 
 # Polybar
-exec_always --no-startup-id ~/.config/polybar/scripts/launch.sh &
+exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh
 
 # Set wallpaper
-# exec --no-startup-id feh --bg-fill ~/Media/Wallpapers/Touhou\ Wallpapers/2020-06-01\ 00_15_12\ \(1\).png
-exec --no-startup-id feh --bg-fill ~/Media/Wallpapers/th16-1.png
+exec --no-startup-id feh --bg-fill ~/Media/Wallpapers/kogasa.png
+
+# PM
+exec_always --no-startup-id protonmail-bridge-core -c
 
 # ==========================
 # === Keybinds, controls ===
@@ -72,9 +75,6 @@ bindsym $mod+Return exec kitty -1
 # kill focused window
 bindsym $mod+Shift+w kill
 bindsym $mod+BackSpace kill
-
-# bindsym $mod+d exec --no-startup-id rofi -show run emoji -modi emoji
-bindsym $mod+d exec --no-startup-id rofi -show run 
 
 # change focus
 bindsym $mod+h focus left
@@ -201,26 +201,38 @@ bindsym $mod+r mode "resize"
 # === Start apps ===
 # ==================
 
+# bindsym $mod+d exec --no-startup-id "rofi -show run 
+bindsym $mod+d exec --no-startup-id "rofi -show combi -combi-modes \\"window,run\\""
+# bindsym $mod+d exec --no-startup-id "rofi -show combi -modes combi -combi-modes \\"window,drun,run\\""
+
 # Set key-repeat
 exec --no-startup-id exec xset r rate 220 60
 
 # Brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -ctrl intel_backlight -inc 10
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -ctrl intel_backlight -dec 10
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 
 # Prtscn
-# bindsym Print exec --no-startup-id gnome-screenshot -i -f ~/Media/Screenshots/Screenshot\ $(date "+%Y-%m-%d--%H-%M-%Screenshot").png
-bindsym Print exec --no-startup-id lximage-qt --screenshot
+bindsym Print exec --no-startup-id ~/.scripts/selection_screenshot
+bindsym $mod+Print exec --no-startup-id ~/.scripts/full_screenshot
 
 # Redshift
-# exec --no-startup-id redshift -l 26.156638:-81.7206867 -t 5600:3400
+exec --no-startup-id redshift
 
 # Notifications
 # dunst -conf .config/dunst/dunstrc 
 
 # JP keyboard toggle
-exec --no-startup-id setxkbmap -layout "us,jp" -option "grp:win_space_toggle"
+exec --no-startup-id setxkbmap -layout "jp"
 exec --no-startup-id fcitx5 -d
 
 # Compositor
-# exec_aays --no-startup-id picom -b
+# exec_always --no-startup-id picom -b 
+
+# Fileservers
+# exec_always --no-startup-id ~/.scripts/pdmount &
+
+### misc
+
+for_window [class="pavucontrol" instance="pavucontrol"] floating enable
+workspace_auto_back_and_forth yes
