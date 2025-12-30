@@ -20,7 +20,7 @@
 * top program: [btop](https://github.com/aristocratos/btop)
 * file browser: [yazi](https://yazi-rs.github.io/)
 * web browser: librewolf
-    * An underrated thing about librewolf/firefox is that you can setup different profiles for work/leisure/study. I use this feature a lot and it helps accidental account sign-ins.
+    * An underrated thing about librewolf/firefox is that you can setup different profiles to segment your accounts (as they hold save different cookies). I use this feature a lot and it helps prevent accidental account sign-ins.
 * text editor: [helix](https://github.com/helix-editor/helix) (I used to use neovim a lot, but I switched since I don't have to worry about configuration as much)
 * other utilities I couldn't live without
     * [Clonezilla](https://clonezilla.org/) (for backups, copying drives)
