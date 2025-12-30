@@ -7,7 +7,7 @@
 <h2></h2><br>
 
 <div align="center">
-    <img src=".github/sway.png" alt="screenshot of dotfiles">
+    <img src=".github/sway1.png" alt="screenshot of dotfiles">
 </div>
 <hr>
 
