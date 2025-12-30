@@ -1,9 +1,0 @@
-#!/bin/sh -e
-
-MONITOR_STATUS=$(xrandr --query --verbose | grep -m2 "DP1" | tail -n1 | cut -d ' ' -f 5);
-
-if [ $MONITOR_STATUS = 'right' ] ; then
-	xrandr --output DP1 --left-of eDP1 --mode 1920x1080 --rotate normal
-elif [ $MONITOR_STATUS = 'normal' ] ; then
-	xrandr --output DP1 --left-of eDP1 --mode 1920x1080 --rotate right
-fi

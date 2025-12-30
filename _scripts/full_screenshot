@@ -1,5 +1,0 @@
-#!/bin/sh -e
-
-timestamp=$(date +%c)
-shotgun - | xclip -t 'image/png' -selection clipboard
-xclip -selection clipboard -t image/png -o > ~/Media/Screenshots/$timestamp.png

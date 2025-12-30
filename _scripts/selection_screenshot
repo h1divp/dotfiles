@@ -1,6 +1,0 @@
-#!/bin/sh -e
-
-selection=$(hacksaw -f "-i %i -g %g")
-timestamp=$(date +%c)
-shotgun $selection - | xclip -t 'image/png' -selection clipboard
-xclip -selection clipboard -t image/png -o > ~/Media/Screenshots/$timestamp.png

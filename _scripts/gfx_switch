@@ -1,8 +1,0 @@
-sudo envycontrol -s integrated
-
-sudo envycontrol -s hybrid --rtd3
-
-LANG="ja_JP.UTF8" wine 
-
-# https://github.com/bayasdev/envycontrol
-# https://wiki.archlinux.org/title/VirtualBox/Install_Arch_Linux_as_a_guest

@@ -1,9 +1,0 @@
-[Unit]
-Description=Timer to check battery status
-
-[Timer]
-OnBootSec=1min
-OnUnitActiveSec=1min
-
-[Install]
-WantedBy=timers.target

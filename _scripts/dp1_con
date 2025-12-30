@@ -1,7 +1,0 @@
-#!/bin/sh -e
-
-xrandr --output DP1 --auto --left-of eDP1
-xrandr --output eDP1 --auto --primary
-feh --bg-fill ~/Media/Wallpapers/kogasa.png
-i3-msg "workspace 10, move workspace to output DP1"
-systemctl --user restart otd.service 

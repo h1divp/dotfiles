@@ -1,5 +1,0 @@
-#!/bin/sh -e
-
-xrandr --output eDP1 --mode 1920x1080 --output HDMI2 --mode 1920x1080 --same-as eDP1
-feh --bg-fill ~/Media/Wallpapers/kogasa.png
-
