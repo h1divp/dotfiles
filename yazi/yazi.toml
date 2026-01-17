@@ -1,0 +1,28 @@
+[opener]
+edit = [
+{ run = 'helix "$@"', block = true }
+]
+firefox = [
+   { run = 'firefox "$@"', desc = "Open with firefox"}
+]
+
+[open]
+prepend_rules = [
+   { url = "*.pdf", use="firefox" },
+   { url = "*.png", use="firefox" },
+   { url = "*.jpg", use="firefox" },
+   { mime = "image/TIFF", use = "firefox" },
+   { mime = "image/*", use = "firefox" },
+   { mime = "video/*", use = "vlc" },
+   { mime = "audio/*", use = "vlc" },
+]
+
+
+[mgr]
+linemode = "size"
+
+[plugin]
+prepend_previewers = [
+  { mime = "{image,audio,video}/*", run = "mediainfo"},
+  { mime = "application/subrip", run = "mediainfo"},
+]

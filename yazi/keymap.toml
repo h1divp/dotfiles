@@ -1,0 +1,14 @@
+[[mgr.prepend_keymap]]
+on   = [ "g", "s" ]
+run  = "cd ~/Media/Screenshots"
+desc = "Cd to screenshots"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "S" ]
+run  = "cd ~/School"
+desc = "Cd to school"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "r" ]
+run  = "cd ~/Repos"
+desc = "Cd to repos"
