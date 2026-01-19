@@ -2,17 +2,20 @@
 edit = [
 { run = 'helix "$@"', block = true }
 ]
-firefox = [
-   { run = 'firefox "$@"', desc = "Open with firefox"}
+browser = [
+   { run = 'librewolf "$@"', desc = "librewolf"}
+]
+pinta = [
+   { run = 'pinta "$@"', desc = "pinta"}
 ]
 
 [open]
 prepend_rules = [
-   { url = "*.pdf", use="firefox" },
-   { url = "*.png", use="firefox" },
-   { url = "*.jpg", use="firefox" },
-   { mime = "image/TIFF", use = "firefox" },
-   { mime = "image/*", use = "firefox" },
+   { url = "*.pdf", use="browser" },
+   { url = "*.png", use = ["browser", "pinta"] },
+   { url = "*.jpg", use = ["browser", "pinta"] },
+   { mime = "image/TIFF", use = ["browser", "pinta"] },
+   { mime = "image/*", use = ["browser", "pinta"] },
    { mime = "video/*", use = "vlc" },
    { mime = "audio/*", use = "vlc" },
 ]

@@ -1,7 +1,7 @@
 {
     "height": 30, // Waybar height (to be removed for auto height)
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
-    "modules-right": ["cpu", "battery", "network", "pulseaudio", "clock#calendar", "clock#time", "clock#timeJst"],
+    "modules-right": ["cpu", "battery", "network", "clock#calendar", "clock#time", "clock#timeJst", "pulseaudio"],
     "sway/workspaces": {
         "disable-scroll-wraparound": true
     },
@@ -46,7 +46,7 @@
         "spacing": 10
     },
     "clock#calendar": {
-        "format": "{:%A, %d %B}",
+        "format": "{:%a %Y-%m-%d}",
         "tooltip-format": "{calendar}",
     },
     "clock#time": {

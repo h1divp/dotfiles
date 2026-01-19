@@ -152,9 +152,12 @@ input type:keyboard {
     bindsym --locked XF86MonBrightnessUp exec light -A 10
 
     exec export XDG_SCREENSHOTS_DIR=$HOME/Media/Screenshots
-    bindsym Print exec /usr/bin/grimshot savecopy output --notify
-    bindsym Shift+Print exec /usr/bin/grimshot savecopy area --notify
-    bindsym Control+Print exec /usr/bin/grimshot savecopy window --notify
+    # bindsym Print exec /usr/bin/grimshot savecopy output --notify
+    # bindsym Shift+Print exec /usr/bin/grimshot savecopy area --notify
+    # bindsym Control+Print exec /usr/bin/grimshot savecopy window --notify
+    bindsym Print exec ~/.scripts/screenshot-fullscreen.sh --notify
+    bindsym Shift+Print exec ~/.scripts/screenshot-area.sh --notify
+    bindsym Ctrl+Print exec ~/.scripts/screenshot-area-edit.sh --notify
 
     bindsym $mod+F12 exec alacritty -e btop
     bindsym $mod+F10 exec alacritty -e bluetui
@@ -166,7 +169,7 @@ input type:keyboard {
     bindsym $mod+bracketright exec playerctl position 5+
 
     exec --no-startup-id fcitx5 -d
-    exec --no-startup-id wlsunset 
+    # exec --no-startup-id wlsunset 
     exec --no-startup-id wl-paste --watch cliphist store
 
 # Status Bar:
