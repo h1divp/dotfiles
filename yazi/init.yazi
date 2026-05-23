@@ -1,0 +1,3 @@
+require("sshfs"):setup({
+    mount_path = "/tmp/yazi-sshfs", -- or your preferred path
+})

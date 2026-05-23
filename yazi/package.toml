@@ -1,7 +1,12 @@
 [[plugin.deps]]
 use = "boydaihungst/mediainfo"
-rev = "7cd6b04"
-hash = "98b8276aa076284f5c4a5260cbe08549"
+rev = "26a75da"
+hash = "53011ad6844fb69e57c946af21ddd3de"
+
+[[plugin.deps]]
+use = "uhs-robert/sshfs"
+rev = "4070c8e"
+hash = "a4cd81fe60c350c3f0fde9957f4a4bb9"
 
 [flavor]
 deps = []

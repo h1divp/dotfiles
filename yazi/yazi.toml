@@ -8,16 +8,25 @@ browser = [
 pinta = [
    { run = 'pinta "$@"', desc = "pinta"}
 ]
+nomacs = [
+   { run = 'nomacs "$@"', desc = "nomacs"}
+]
+gimp = [
+   { run = 'gimp "$@"', desc = "gimp"}
+]
+video = [
+   { run = 'mpv "$@"', desc = "video"}
+]
 
 [open]
 prepend_rules = [
    { url = "*.pdf", use="browser" },
-   { url = "*.png", use = ["browser", "pinta"] },
-   { url = "*.jpg", use = ["browser", "pinta"] },
-   { mime = "image/TIFF", use = ["browser", "pinta"] },
-   { mime = "image/*", use = ["browser", "pinta"] },
-   { mime = "video/*", use = "vlc" },
-   { mime = "audio/*", use = "vlc" },
+   { url = "*.png", use = ["browser", "pinta", "nomacs"] },
+   { url = "*.jpg", use = ["browser", "pinta", "nomacs"] },
+   { mime = "image/TIFF", use = ["browser", "pinta", "nomacs"] },
+   { mime = "image/*", use = ["browser", "pinta", "gimp", "nomacs"] },
+   { mime = "video/*", use = "video" },
+   { mime = "audio/*", use = "video" },
 ]
 
 
