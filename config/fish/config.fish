@@ -42,8 +42,3 @@ set -gx PNPM_HOME "/home/h1divp/.local/share/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
     set -gx PATH "$PNPM_HOME" $PATH
 end
-
-# tmux
-# set ssession $(sesh l -t -T -d -H | rofi -dmenu -p run "Sesh sessions")
-# sesh cn --switch $ssession
-# 

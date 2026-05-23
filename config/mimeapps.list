@@ -1,0 +1,35 @@
+[Default Applications]
+x-scheme-handler/http=librewolf.desktop
+x-scheme-handler/https=librewolf.desktop
+text/html=librewolf.desktop
+x-scheme-handler/about=librewolf.desktop
+x-scheme-handler/unknown=librewolf.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-LZLNH3.desktop
+message/rfc822=userapp-Thunderbird-LZLNH3.desktop
+x-scheme-handler/mid=userapp-Thunderbird-LZLNH3.desktop
+x-scheme-handler/news=userapp-Thunderbird-LTKLH3.desktop
+x-scheme-handler/snews=userapp-Thunderbird-LTKLH3.desktop
+x-scheme-handler/nntp=userapp-Thunderbird-LTKLH3.desktop
+x-scheme-handler/feed=userapp-Thunderbird-SVN6H3.desktop
+application/rss+xml=userapp-Thunderbird-SVN6H3.desktop
+application/x-extension-rss=userapp-Thunderbird-SVN6H3.desktop
+x-scheme-handler/webcal=userapp-Thunderbird-HR86H3.desktop
+text/calendar=userapp-Thunderbird-HR86H3.desktop
+application/x-extension-ics=userapp-Thunderbird-HR86H3.desktop
+x-scheme-handler/webcals=userapp-Thunderbird-HR86H3.desktop
+x-scheme-handler/postman=Postman.desktop
+x-scheme-handler/bruno=bruno.desktop
+image/jpeg=rawtherapee.desktop
+
+[Added Associations]
+x-scheme-handler/mailto=userapp-Thunderbird-LZLNH3.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-LZLNH3.desktop;
+x-scheme-handler/news=userapp-Thunderbird-LTKLH3.desktop;
+x-scheme-handler/snews=userapp-Thunderbird-LTKLH3.desktop;
+x-scheme-handler/nntp=userapp-Thunderbird-LTKLH3.desktop;
+x-scheme-handler/feed=userapp-Thunderbird-SVN6H3.desktop;
+application/rss+xml=userapp-Thunderbird-SVN6H3.desktop;
+application/x-extension-rss=userapp-Thunderbird-SVN6H3.desktop;
+x-scheme-handler/webcal=userapp-Thunderbird-HR86H3.desktop;
+x-scheme-handler/webcals=userapp-Thunderbird-HR86H3.desktop;
+image/jpeg=org.nomacs.ImageLounge.desktop;rawtherapee.desktop;

@@ -1,0 +1,14 @@
+[Unit]
+Description=Proton Mail Bridge Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/lib/protonmail/bridge/bridge --noninteractive --log-level info
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
+
+
