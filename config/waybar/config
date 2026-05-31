@@ -58,6 +58,10 @@
         "tooltip-format": "{calendar}",
         "timezone": "Japan",
     },
+    "clock#timeCest": {
+        "format": "{:%Z %H:%M}",
+        "timezone": "Europe/Prague",
+    },
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false

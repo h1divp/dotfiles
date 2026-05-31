@@ -122,6 +122,9 @@ language-servers = [ "clangd" ]
 name = "python"
 roots = ["pyproject.toml", "requirements.txt"]
 language-servers = [ "pyright" ]
+# indent = { indent-width = 4, tab-width = 4 }
+auto-format = true
+formatter = { command = "pyink", args = ["-"] }
 
 [language-server.pyright.config.python]
 pythonPath = ".venv/bin/python"

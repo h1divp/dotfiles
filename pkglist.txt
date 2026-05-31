@@ -346,6 +346,7 @@ rygel
 s-nail
 sddm
 sddm-kcm
+sddm-silent-theme
 sg3_utils
 shotcut
 showtime
@@ -412,7 +413,6 @@ vlc-plugins-all
 vscode-langservers-extracted
 vulkan-intel
 vulkan-nouveau
-watchman-bin
 waybar
 wayland-protocols
 weathr-bin
